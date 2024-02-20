@@ -16,7 +16,7 @@ export type CoffeeStore = {
 
 export type AirtableRecord = {
   id: string
-  recordID: string
+  recordId: string
   fields: CoffeeStore
 }
 

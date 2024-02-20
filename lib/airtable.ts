@@ -12,7 +12,7 @@ const table = base("coffee-stores")
 const getMinifiedRecords = (records: AirtableRecord[]) => {
   return records.map((record: AirtableRecord) => {
     return {
-      recordID: record.id,
+      recordId: record.id,
       ...record.fields,
     }
   })
@@ -75,7 +75,7 @@ export const updateCoffeeStore = async (id: string) => {
         const updatedVotes = record.votes + 1
         const updateRecords = await table.update([
           {
-            id: record.recordID,
+            id: record.recordId,
             fields: {
               votes: updatedVotes,
             },
