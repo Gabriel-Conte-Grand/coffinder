@@ -8,6 +8,10 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    scrollRestoration: true,
+    serverMinification: false,
+  },
 }
 
 export default nextConfig

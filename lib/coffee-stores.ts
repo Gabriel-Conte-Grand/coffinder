@@ -3,7 +3,7 @@ import { MapboxData } from "@/types"
 const getListOfCoffeeStorePhotos = async () => {
   try {
     const resp = await fetch(
-      `https://api.unsplash.com/search/photos/?client_id=${process.env.UNSPLASH_ACCESS_KEY}&query="coffee shop"&page=1&perPage=10`
+      `https://api.unsplash.com/search/photos/?client_id=${process.env.UNSPLASH_ACCESS_KEY}&query="coffee shop"&page=1&perPage=10&orientation=landscape`
     )
 
     const photos = await resp.json()

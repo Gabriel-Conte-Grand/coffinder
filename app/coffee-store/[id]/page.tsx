@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 
   return coffeeStores.map((coffeeStore: CoffeeStore) => {
     return {
-      id: coffeeStore.id,
+      id: coffeeStore.id.toString(),
     }
   })
   // DEVUELVO UN ARRAY DE IDS [id1, id2, id3...]
